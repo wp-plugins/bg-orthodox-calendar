@@ -2,13 +2,12 @@
 Настройка стилей окна календаря на год
 *********************************************************/
 
-/*** Окно календаря 				***/
+
+/*** Окно календаря 								 ***/
 #bscal {					
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: normal;
-	background-color: #EEEEEE;	/* Цвет основного фона	*/
-	color: #000000;				/* Цвет основного текста*/
 	border: 5px ridge #FFFFFF;
 	margin: 0px;
 	padding: 0px;
@@ -48,14 +47,15 @@
 	font-size: 12px;
 	font-weight: normal;
 	padding: 5px;
-	vertical-align: middle;
+	margin: 5px 0px;
 }
 /* Input fields */
 input,
 textarea {
 	font-size: 12px;
 	font-weight: normal;
-	padding: 5px;
+	padding: 2px;
+	margin: 5px 0px;
 }
 #bscal .top {			/* Заголовок окна 				*/
         height: 20px;
@@ -65,8 +65,6 @@ textarea {
 		text-align: center;
 }
 #bscal .top td, #bscal td.bot {
-		background-color: #132E64; 		/* Цвет фона	*/	
-		color: white; 					/* Цвет текста 	*/	
         font-family: Tahoma;
         font-size: 16px;
         font-weight: bold;
@@ -82,7 +80,6 @@ textarea {
 }
  
 #bscal td.arrow{			/* Поля перехода назад-вперед	*/
-		color: #132E64; 				/* Цвет текста 	*/	
         font-family: Tahoma;
         font-size: 16px;
 		text-align: center;
@@ -90,21 +87,16 @@ textarea {
 		cursor: pointer;
 }
 #bscal .over {			/* Дата под курсором			*/	
-		background-color: #406FCD; 		/* Цвет фона 	*/	
-		color: white; 					/* Цвет текста 	*/	
         border: 0px outset;
 		font-weight: bold;
         cursor: pointer;
 		text-align: center;
 }
 #bscal .month {			/* Названия месяцев				*/
-		color: #132E64; 				/* Цвет текста 	*/	
         font-weight: bold;
         font-size: 14px;
 }
 #bscal .week {			/* Дни недели					*/
-		background-color: #132E64; 		/* Цвет фона	*/	
-		color: white; 					/* Цвет текста 	*/	
 		text-align: center;
 }
 #bscal .day {			/* Обычный день					*/
@@ -113,8 +105,6 @@ textarea {
 		text-align: center;
 }
 #bscal .today {			/* Сегодня						*/
-		background-color: #335AAB; 		/* Цвет фона 	*/	
-		color: white; 					/* Цвет текста 	*/	
 		background-repeat: no-repeat;
         font-weight: bold;
 		text-align: center;
@@ -181,13 +171,11 @@ textarea {
 		background-repeat: no-repeat;
 }
 
-/*** Окно меню выбора действий		***/
+/*** Окно меню выбора действий						  ***/
 #v-menu {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 12px;
 	line-height: normal;
-	background-color: #fafafa;	/* Цвет основного фона	*/	
-	color: #000000;				/* Цвет основного текста*/	
 	border: 1px outset;
 	margin: 0px;
 	padding: 0px;
@@ -210,17 +198,9 @@ textarea {
 	margin: 0px;
 	padding: 0.2em 1em;
 }
-#v-menu li:hover {		/* Выделение				*/
-    color: #FFFFFF;					/* Цвет текста 	*/
-    background-color: #132E64;		/* Цвет фона 	*/
-}
 #v-menu  li a {
 	text-decoration: none;
 	color:inherit;
 	border: 0;
-}
-#v-menu  li a:hover {		/* Выделение				*/
-    color: #FFFFFF;					/* Цвет текста 	*/
-    background-color: #132E64;		/* Цвет фона 	*/
 }
 	

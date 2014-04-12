@@ -22,7 +22,7 @@
 		naming.div.style.display = "none";
 	},
 	html: function() {
-	var t = '<table width="100%" class="header"><tr><td></td><td width="12px" style="cursor: pointer;" onclick="naming.hide();" title="Закрыть"><b>х</b></td></tr>';
+	var t = '<table width="100%" class="header"><tr><td></td><td width="20px" style="cursor: pointer;" onclick="naming.hide();" title="Закрыть"><b>х</b></td></tr>';
 		t += '<tr><td colspan="2"><p style="margin:12px 0px; font-size: 24px;">Наречение имени по месяцеслову</p></td></tr></table>';
 		t += '<div class="separator1"></div>';
 		t += '<div class="separator2"></div>';
@@ -135,7 +135,7 @@ var today = {
 		today.div.style.display = "none";
 	},
 	html: function() {
-	var t = '<table width="100%" class="header"><tr><td></td><td width="12px" style="cursor: pointer;" onclick="today.hide();" title="Закрыть"><b>х</b></td></tr>';
+	var t = '<table width="100%" class="header"><tr><td></td><td width="20px" style="cursor: pointer;" onclick="today.hide();" title="Закрыть"><b>х</b></td></tr>';
 		t += '<tr><td colspan="2"><p style="margin:12px 0px; font-size: 24px;">Православный календарь</p></td></tr></table>';
 		t += '<div class="separator"></div>';
 		t += '<div id="thisDay" class="day"></div>';

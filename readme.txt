@@ -17,7 +17,7 @@ License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Orhodoxy calendar on your site.
+Orhodox calendar on your site.
 
 
 == Description ==
@@ -40,7 +40,7 @@ Details in Russian only:
 Если параметр не задан, то отображается календарь на текущий год, месяц или день.
 
 Плагин не имеет настроек. 
-Чтобы изменить цветовую палитру просто отредактируйте файлы стилей плагина. 
+Используйте настройки, чтобы изменить цветовую палитру некоторых элементов календаря. 
 Для этого зайдите в админке WP Плагины/Редактор и выберите плагин Bg Orthodox Calendar.
 Файл bs_calendar.css содержит настройки стилей для основного окна календаря, st_names.css - окна-подсказки выбора имени новорожденному, а sl_psaltir.css - отвечает за внешний вид календаря в виде списка.
 
@@ -66,12 +66,19 @@ Details in Russian only:
 
 == Changelog ==
 
+= 0.2 =
+
+* Добавлены настройки цветов / Added color settings
+
 = 0.1 =
 
-* Plugin in beta testing mode
+* Плагин в режиме бета-тестирования / Plugin in beta testing mode
 
 == Upgrade Notice ==
 
+= 0.2 =
+
+* Добавлены настройки цветов / Added color settings
 
 == License ==
 

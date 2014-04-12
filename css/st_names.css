@@ -6,8 +6,6 @@
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: normal;
-	background-color: #132E64;	/* Цвет основного фона	*/
-	color: #000000;				/* Цвет основного текста*/
 	border: 1px outset #FFFFFF;
 	margin: 0px;
 	padding: 0px;
@@ -65,18 +63,15 @@
 }
 #snames .separator2 {	/* Разделитель	низ			*/
 	background-image: url('separator2.png');
-	background-color: #EEEEEE;		/* Цвет фона	*/
 	height: 25px;
 }
 #snames .bottom1 {	/* Разделитель	верх		*/
 	height: 25px;
 }
 #snames .bottom2 {	/* Разделитель	низ			*/
-	background-color: #EEEEEE;		/* Цвет фона	*/
 	height: 25px;
 }
 #snames .day {		/* Описание дня					*/
-	background-color: #EEEEEE;		/* Цвет фона	*/
 	min-height: 200px;
 	padding: 6px;
 }
