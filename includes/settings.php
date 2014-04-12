@@ -7,8 +7,8 @@ function bg_ortcal_options_page() {
 
     // имена опций и полей
 	$mainColor_name 	= "bg_ortcal_mainColor";
-	$titleColor_name 	= "bg_ortcal_titleColor";
 	$mainBgColor_name 	= "bg_ortcal_mainBgColor";
+	$titleColor_name 	= "bg_ortcal_titleColor";
 	$otherColor_name 	= "bg_ortcal_otherColor";
 	$otherBgColor_name 	= "bg_ortcal_otherBgColor";
 	$overColor_name 	= "bg_ortcal_overColor";
@@ -22,8 +22,8 @@ function bg_ortcal_options_page() {
 	
     // Читаем существующие значения опций из базы данных
 	$mainColor 		= get_option( "bg_ortcal_mainColor" );
-	$titleColor 	= get_option( "bg_ortcal_titleColor" );
 	$mainBgColor 	= get_option( "bg_ortcal_mainBgColor" );
+	$titleColor 	= get_option( "bg_ortcal_titleColor" );
 	$otherColor 	= get_option( "bg_ortcal_otherColor" );
 	$otherBgColor 	= get_option( "bg_ortcal_otherBgColor" );
 	$overColor 		= get_option( "bg_ortcal_overColor" );
@@ -39,11 +39,11 @@ function bg_ortcal_options_page() {
 		$mainColor = ( isset( $_POST[$mainColor_name] ) && $_POST[$mainColor_name] ) ? $_POST[$mainColor_name] : '' ;
 		update_option( $mainColor_name, $mainColor );
 
-		$titleColor = ( isset( $_POST[$titleColor_name] ) && $_POST[$titleColor_name] ) ? $_POST[$titleColor_name] : '' ;
-		update_option( $titleColor_name, $titleColor );
-
 		$mainBgColor =( isset( $_POST[$mainBgColor_name] ) && $_POST[$mainBgColor_name] ) ? $_POST[$mainBgColor_name] : '' ;
 		update_option( $mainBgColor_name, $mainBgColor );
+
+		$titleColor = ( isset( $_POST[$titleColor_name] ) && $_POST[$titleColor_name] ) ? $_POST[$titleColor_name] : '' ;
+		update_option( $titleColor_name, $titleColor );
 
 		$otherColor = ( isset( $_POST[$otherColor_name] ) && $_POST[$otherColor_name] ) ? $_POST[$otherColor_name] : '' ;
 		update_option( $otherColor_name, $otherColor );
@@ -90,14 +90,14 @@ function bg_ortcal_options_page() {
 <input type="color" id="mainColor_name" name="<?php echo $mainColor_name ?>" value="<?php echo $mainColor ?>"><br />
 </td></tr>
 <tr valign="top">
-<th scope="row">Цвет заголовков:</th>
-<td>
-<input type="color" id="titleColor_name" name="<?php echo $titleColor_name ?>" value="<?php echo $titleColor ?>"> (стрелки перехода на другой год, названия месяцев)<br />
-</td></tr>
-<tr valign="top">
 <th scope="row">Основной цвет фона:</th>
 <td>
 <input type="color" id="mainBgColor_name" name="<?php echo $mainBgColor_name ?>" value="<?php echo $mainBgColor ?>"><br />
+</td></tr>
+<tr valign="top">
+<th scope="row">Цвет заголовков:</th>
+<td>
+<input type="color" id="titleColor_name" name="<?php echo $titleColor_name ?>" value="<?php echo $titleColor ?>"> (стрелки перехода на другой год, названия месяцев)<br />
 </td></tr>
 <tr valign="top">
 <th scope="row">Дополнительный цвет текста:</th>
@@ -110,14 +110,14 @@ function bg_ortcal_options_page() {
 <input type="color" id="otherBgColor_name" name="<?php echo $otherBgColor_name ?>" value="<?php echo $otherBgColor ?>"> (заголовок, подвал, дни недели)<br />
 </td></tr>
 <tr valign="top">
-<th scope="row">Цвет текста текущего дня:</th>
+<th scope="row">Цвет текста выбранного дня:</th>
 <td>
-<input type="color" id="overColor_name" name="<?php echo $overColor_name ?>" value="<?php echo $overColor ?>"> (день, на который указывет курсор)<br />
+<input type="color" id="overColor_name" name="<?php echo $overColor_name ?>" value="<?php echo $overColor ?>"> (день, на который указывает курсор)<br />
 </td></tr>
 <tr valign="top">
-<th scope="row">Цвет фона текущего дня:</th>
+<th scope="row">Цвет фона выбранного дня:</th>
 <td>
-<input type="color" id="overBgColor_name" name="<?php echo $overBgColor_name ?>" value="<?php echo $overBgColor ?>"> (день, на который указывет курсор)<br />
+<input type="color" id="overBgColor_name" name="<?php echo $overBgColor_name ?>" value="<?php echo $overBgColor ?>"> (день, на который указывает курсор)<br />
 </td></tr>
 <tr valign="top">
 <th scope="row">Цвет текста сегодня:</th>
@@ -131,7 +131,7 @@ function bg_ortcal_options_page() {
 </td></tr></table>
 
 <p class="submit">
-<input type="submit" name="Submit" value="<?php _e('Update Options', 'bg_bibfers' ) ?>" />
+<input type="submit" name="Submit" value="Сохранить настройки" />
 </p>
 
 </form>
@@ -151,7 +151,7 @@ function bg_ortcal_options_page() {
 	<h3>Мне нравится этот плагин. Как я могу Вас отблагодарить?</h3>
 	<p>Есть несколько путей сделать это:</p>
 	<ul>
-		<li><a href="http://hpf.ru.com/donate/" target="_blank">Сделать пожертвование</a> на храм свв. Петра и Февронии в Марьино.</li>
+		<li><a href="http://hpf.ru.com/" target="_blank">Сделать пожертвование</a> на храм свв. Петра и Февронии в Марьино.</li>
 		<li><a href="http://wordpress.org/support/view/plugin-reviews/bg-orthodox-calendar" target="_blank">Присвоить 5 звезд</a> в каталоге плагинов WordPress.</li>
 		<li>Распространить информацию или написать заметку в свой блог о плагине.</li>
 	</ul>
@@ -171,8 +171,8 @@ function bg_ortcal_options_page() {
 // Задание параметров по умолчанию
 function bg_ortcal_options_ini () {
 	add_option('bg_ortcal_mainColor', "#000000");
-	add_option('bg_ortcal_titleColor', "#132E64");
 	add_option('bg_ortcal_mainBgColor', "#EEEEEE");
+	add_option('bg_ortcal_titleColor', "#132E64");
 	add_option('bg_ortcal_otherColor', "#FFFFFF");
 	add_option('bg_ortcal_otherBgColor', "#132E64");
 	add_option('bg_ortcal_overColor', "#FFFFFF");
@@ -184,8 +184,8 @@ function bg_ortcal_options_ini () {
 // Очистка таблицы параметров при удалении плагина
 function bg_ortcal_deinstall() {
 	delete_option('bg_ortcal_mainColor');
-	delete_option('bg_ortcal_titleColor');
 	delete_option('bg_ortcal_mainBgColor');
+	delete_option('bg_ortcal_titleColor');
 	delete_option('bg_ortcal_otherColor');
 	delete_option('bg_ortcal_otherBgColor');
 	delete_option('bg_ortcal_overColor');
