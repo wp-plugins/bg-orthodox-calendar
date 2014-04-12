@@ -174,7 +174,7 @@ function bg_ortcal_options_ini () {
 	add_option('bg_ortcal_titleColor', "#132E64");
 	add_option('bg_ortcal_mainBgColor', "#EEEEEE");
 	add_option('bg_ortcal_otherColor', "#FFFFFF");
-	add_option('bg_ortcal_otherBgColor', "#AF290D");
+	add_option('bg_ortcal_otherBgColor', "#132E64");
 	add_option('bg_ortcal_overColor', "#FFFFFF");
 	add_option('bg_ortcal_overBgColor', "#406FCD");
 	add_option('bg_ortcal_todayColor', "#FFFFFF");
