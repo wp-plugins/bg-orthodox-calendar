@@ -1,7 +1,7 @@
 <?php
 /* 
     Plugin Name: Bg Orthodox Calendar 
-    Plugin URI: http://bogaiskov.ru/script-orthodox-calendar/
+    Plugin URI: http://bogaiskov.ru/plugin-orthodox-calendar/
     Description: Плагин выводит на экран православный календарь на год: дата по старому стилю, праздники по типикону (от двунадесятых до вседневных), памятные даты, дни поминовения усопших, дни почитания икон, посты и сплошные седмицы. 
     Author: Vadim Bogaiskov
     Version: 0.2
