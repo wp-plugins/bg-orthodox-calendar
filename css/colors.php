@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 	header("Content-type: text/css; charset: UTF-8");
 	$absolute_path = explode('wp-content', $_SERVER['SCRIPT_FILENAME']);
 	$wp_load = $absolute_path[0] . 'wp-load.php';
@@ -6,8 +6,8 @@
   if (function_exists ( 'get_option' )){
     // Читаем существующие значения опций из базы данных
 	$mainColor 		= get_option( "bg_ortcal_mainColor" );
-	$titleColor 	= get_option( "bg_ortcal_titleColor" );
 	$mainBgColor 	= get_option( "bg_ortcal_mainBgColor" );
+	$titleColor 	= get_option( "bg_ortcal_titleColor" );
 	$otherColor 	= get_option( "bg_ortcal_otherColor" );
 	$otherBgColor 	= get_option( "bg_ortcal_otherBgColor" );
 	$overColor 		= get_option( "bg_ortcal_overColor" );
