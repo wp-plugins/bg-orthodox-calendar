@@ -320,45 +320,45 @@ var bscal = {
  	    var res  = "";
 		var m=0;
 
-	    res += "<table cellpadding=0 cellspacing=0 width=100% unselectable=on>\n";
-	    res += "<tr class='top'><td style='cursor:help' title = 'Если навести мышку на какую-нибудь дату высвечиваются: дата по старому стилю, праздники по типикону (от двунадесятых до вседневных), памятные даты, дни поминовения усопших, посты и сплошные седмицы.\nЕсли нажать на кнопку мыши на одном из дней текущего года, открывается дополнительное меню, при двойном щелчке - попадаем на соответствующую страницу дня на сайте Православие.ру.'>Выберите дату</td><td colspan='4' class=top-right><span onclick='bscal.hide();' style='cursor:pointer;' title='Закрыть'>x</span></td></tr>\n";
+	    res += "<table width=100% unselectable=on>\n";
+	    res += "<tr class='top'><td class=top-left title = 'Если навести мышку на какую-нибудь дату высвечиваются: дата по старому стилю, праздники по типикону (от двунадесятых до вседневных), памятные даты, дни поминовения усопших, посты и сплошные седмицы.\nЕсли нажать на кнопку мыши на одном из дней текущего года, открывается дополнительное меню, при двойном щелчке - попадаем на соответствующую страницу дня на сайте Православие.ру.'>Выберите дату</td><td colspan='4' class=top-right onclick='bscal.hide();' title='Закрыть'>x </td></tr>\n";
 		res += "<tr unselectable=on>"+
 	           "<td class='arrow' onClick=bscal.scroll_Y(-1);><< предыдущий год</td>"+
-				"<td colspan=1 unselectable=on></td>"+
-				"<td colspan=1 unselectable=on><input id='bs_year' type='text' style='width: 90px' onchange=bscal.change_Y(this.value); onkeyup='return onlyDigits(this);'></input> <button style='cursor: pointer;' onClick='bscal.change_Y(bs_year.value);'>&nbsp;Ok&nbsp;</button> <button style='cursor: pointer;' onClick='bscal.showList();'>&nbsp;Список&nbsp;</button></td>"+
-				"<td colspan=1 unselectable=on></td>"+
+				"<td unselectable=on></td>"+
+				"<td unselectable=on><input id='bs_year' type='text' style='width: 90px' onchange=bscal.change_Y(this.value); onkeyup='return onlyDigits(this);'></input> <button onClick='bscal.change_Y(bs_year.value);'>&nbsp;Ok&nbsp;</button> <button onClick='bscal.showList();'>&nbsp;Список&nbsp;</button></td>"+
+				"<td unselectable=on></td>"+
 			   "<td class='arrow' onClick=bscal.scroll_Y(1);>следующий год >></td>\n"+
 				"</tr>\n";
 		for (var j=1; j<=4; j++)
 		{
-			res += "<TR align=center unselectable=on>\n";
+			res += "<tr unselectable=on>\n";
 			for (var i=1; i<=3; i++)
 			{
 				m++;
 				res += "<td id='month_"+m+"'>";
 		
-				res += "<table cellpadding=0 cellspacing=0 width=100% unselectable=on>\n";
+				res += "<table width=100% unselectable=on>\n";
 				res += "<tr unselectable=on>"+
-						"<td  class='month' colspan=7 unselectable=on>"+bscal.mns[m-1]+"</td>"+
+						"<td class='month' colspan=7 unselectable=on>"+bscal.mns[m-1]+"</td>"+
 						"</tr>\n";
 				res += "<tr unselectable=on align=center>\n";
 				for (var x=0;x<7;x++)
-					res += "<TD class='week' width=30 unselectable=on>"+bscal.wds[x]+"</TD>\n";
+					res += "<td class='week' unselectable=on>"+bscal.wds[x]+"</td>\n";
 				res += "</tr>";
 				for (var y=1;y<=6;y++)
 				{
-					res += "<TR align=center unselectable=on>\n";
+					res += "<tr align=center unselectable=on>\n";
 					for (var x=1;x<=7;x++){
 						res += "<td id='cell_"+m+"_"+y+"_"+x+"' onmouseover=\"bscal.dover(this);\" onmouseout=\"bscal.dout(this);\" onclick=\"bscal.retMenu("+m+", this.innerHTML, this);\" ondblclick=\"bscal.retD("+m+", this.innerHTML);\" unselectable=on>"+m+"_"+y+"_"+x+"</td>\n";
 					}
-					res += "</TR>\n";
+					res += "</tr>\n";
 				}
 				res += "</table>";
 		
 				res += "</td>\n";
 				if (i<=2) res += "<td>&nbsp;</td>\n";
 			}
-			res += "</TR>\n";
+			res += "</tr>\n";
 			if (j<=3) res += "<tr><td colspan=5></td></tr>\n";
 		}
 		res += "<tr class='top' align=center>\n"+

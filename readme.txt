@@ -63,6 +63,10 @@ Details in Russian only:
 
 == Changelog ==
 
+= 0.2.2 =
+
+* Изменения в настройках стилей / Changes in styles  
+
 = 0.2 =
 
 * Добавлены настройки цветов / Added color settings
@@ -72,6 +76,10 @@ Details in Russian only:
 * Плагин в режиме бета-тестирования / Plugin in beta testing mode
 
 == Upgrade Notice ==
+
+= 0.2.2 =
+
+* Изменения в настройках стилей / Changes in styles  
 
 = 0.2 =
 

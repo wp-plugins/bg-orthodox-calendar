@@ -11,29 +11,31 @@
 	border: 5px ridge #FFFFFF;
 	margin: 0px;
 	padding: 0px;
-	z-index: 100;
+	z-index: 1000;
 	left: 0px;
 	top: 0px;
 	position: absolute;
 }
 #bscal table {
-		border: 0px;
-		margin: 0px;
-		padding: 0px;
-		font-size: 12px;
-		line-height: normal;
-		text-align: center;
+	border: 0px;
+	border-collapse:collapse; 
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	line-height: normal;
+	text-align: center;
 }
 
 #bscal tr {
-		border: 0px;
-		margin: 0px;
-		padding: 0px;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 #bscal td {
-		border: 0px;
-		margin: 0px;
-		padding: 0px;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	min-width: 29px;
 }
 #bscal hr {
 	margin: 2px 0 2px;
@@ -48,127 +50,130 @@
 	font-weight: normal;
 	padding: 5px;
 	margin: 5px 0px;
+	display: inline;
+	cursor: pointer;
 }
 /* Input fields */
-input,
-textarea {
+#bscal input[type="text"],
+#bscal textarea {
 	font-size: 12px;
 	font-weight: normal;
 	padding: 2px;
 	margin: 5px 0px;
+	display: inline;
 }
 #bscal .top {			/* Заголовок окна 				*/
-        height: 20px;
+       height: 20px;
 }
 #bscal td.bot {			/* Подвал окна 					*/
-		cursor: pointer;
-		text-align: center;
+	cursor: pointer;
+	text-align: center;
 }
 #bscal .top td, #bscal td.bot {
-        font-family: Tahoma;
-        font-size: 16px;
-        font-weight: bold;
-        padding: 3px 5px;
+    font-family: Tahoma;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px 5px;
 }
 #bscal .top-left  {		/* "Выберите дату" 				*/
-        cursor:help;
-		text-align: left;
+    cursor:help;
+	text-align: left;
 }
 #bscal .top-right  {		/* Х - закрытие окна			*/
-        cursor:pointer;
-		text-align: right;
+    cursor:pointer;
+	text-align: right;
 }
  
 #bscal td.arrow{			/* Поля перехода назад-вперед	*/
-        font-family: Tahoma;
-        font-size: 16px;
-		text-align: center;
-		padding: 3px 5px;
-		cursor: pointer;
+    font-family: Tahoma;
+    font-size: 16px;
+	text-align: center;
+	padding: 3px 5px;
+	cursor: pointer;
 }
-#bscal .over {			/* Дата под курсором			*/	
-        border: 0px outset;
-		font-weight: bold;
-        cursor: pointer;
-		text-align: center;
+#bscal  td.over {			/* Дата под курсором			*/	
+    border: 0px outset;
+	font-weight: bold;
+    cursor: pointer;
+	text-align: center;
 }
-#bscal .month {			/* Названия месяцев				*/
-        font-weight: bold;
-        font-size: 14px;
+#bscal td.month {			/* Названия месяцев				*/
+    font-weight: bold;
+    font-size: 14px;
 }
-#bscal .week {			/* Дни недели					*/
-		text-align: center;
+#bscal td.week {			/* Дни недели					*/
+	text-align: center;
 }
-#bscal .day {			/* Обычный день					*/
-        color: #000000;
-		background-repeat: no-repeat;
-		text-align: center;
+#bscal td.day {			/* Обычный день					*/
+    color: #000000;
+	background-repeat: no-repeat;
+	text-align: center;
 }
-#bscal .today {			/* Сегодня						*/
-		background-repeat: no-repeat;
-        font-weight: bold;
-		text-align: center;
+#bscal td.today {			/* Сегодня						*/
+	background-repeat: no-repeat;
+    font-weight: bold;
+	text-align: center;
 }
 #bscal td.weekend {		/* Воскресные дни				*/
-		color: red;						/* Цвет текста 	*/
-		text-align: center;
+	color: red;						/* Цвет текста 	*/
+	text-align: center;
 }
 #bscal td.easter {		/* Пасха						*/
-        color: white;					/* Цвет текста 	*/
- 		background-color: red;			/* Цвет фона 	*/
-       font-weight: bold;
-		text-align: center;
+    color: white;					/* Цвет текста 	*/
+ 	background-color: red;			/* Цвет фона 	*/
+    font-weight: bold;
+	text-align: center;
 }
 #bscal td.holidays {		/* Праздники					*/
-        color: red;						/* Цвет текста 	*/
-        font-weight: bold;
-		text-align: center;
+    color: red;						/* Цвет текста 	*/
+    font-weight: bold;
+	text-align: center;
 }
 #bscal td.memory {		/* Дни памяти (родительские)	*/
-        color: blue;					/* Цвет текста 	*/
-        font-weight: bold;
-		text-align: center;
+    color: blue;					/* Цвет текста 	*/
+    font-weight: bold;
+	text-align: center;
 }
 #bscal td.post {			/* Постные дни					*/
-		background-color:silver;		/* Цвет фона 	*/
-		text-align: center;
+	background-color:silver;		/* Цвет фона 	*/
+	text-align: center;
 }
 #bscal td.post_weekend { /* Постные воскресные дни		*/
-		color: red;						/* Цвет фона 	*/
-		background-color:silver;		/* Цвет фона 	*/
-		text-align: center;
+	color: red;						/* Цвет фона 	*/
+	background-color:silver;		/* Цвет фона 	*/
+	text-align: center;
 }
 #bscal td.post_holidays { /* Постные праздники			*/
-		color: red;						/* Цвет текста 	*/
-		background-color:silver;		/* Цвет фона 	*/
-        font-weight: bold;
-		text-align: center;
+	color: red;						/* Цвет текста 	*/
+	background-color:silver;		/* Цвет фона 	*/
+    font-weight: bold;
+	text-align: center;
 }
 #bscal td.post_memory {	/* Постные дни памяти			*/
-		color: blue;					/* Цвет текста 	*/
-		background-color:silver;		/* Цвет фона 	*/
-        font-weight: bold;
-		text-align: center;
+	color: blue;					/* Цвет текста 	*/
+	background-color:silver;		/* Цвет фона 	*/
+    font-weight: bold;
+	text-align: center;
 }
 #bscal .nowedding_on {	/* Нет бракосочетания			*/
-		background-image: url('nowedding.png');
-		background-repeat: no-repeat;
+	background-image: url('nowedding.png');
+	background-repeat: no-repeat;
 }
 #bscal .wedding_on {		/* Есть бракосочетание			*/
-		background-image: url('wedding.png');
-		background-repeat: no-repeat;
+	background-image: url('wedding.png');
+	background-repeat: no-repeat;
 }
 #bscal .nowedding_off {	/* Нет бракосочетания выкл.		*/
-		background-image: url('empty.png');
-		background-repeat: no-repeat;
+	background-image: url('empty.png');
+	background-repeat: no-repeat;
 }
 #bscal .wedding_off {	/* Есть бракосочетание	выкл.	*/
-		background-image: url('empty.png');
-		background-repeat: no-repeat;
+	background-image: url('empty.png');
+	background-repeat: no-repeat;
 }
 #bscal .empty {			/* ЕНет отметок					*/
-		background-image: url('empty.png');
-		background-repeat: no-repeat;
+	background-image: url('empty.png');
+	background-repeat: no-repeat;
 }
 
 /*** Окно меню выбора действий						  ***/
@@ -179,7 +184,7 @@ textarea {
 	border: 1px outset;
 	margin: 0px;
 	padding: 0px;
-	z-index: 100;
+	z-index: 1001;
 	left: 0px;
 	top: 0px;
 	position: absolute;
@@ -203,4 +208,3 @@ textarea {
 	color:inherit;
 	border: 0;
 }
-	
