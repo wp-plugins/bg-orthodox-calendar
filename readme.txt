@@ -63,6 +63,10 @@ Details in Russian only:
 
 == Changelog ==
 
+= 0.2.3 =
+
+* Исправлена ошибка в настройках цвета фона Сегодня / Fixed error in background option of Today
+
 = 0.2.2 =
 
 * Изменения в настройках стилей / Changes in styles  
@@ -76,6 +80,10 @@ Details in Russian only:
 * Плагин в режиме бета-тестирования / Plugin in beta testing mode
 
 == Upgrade Notice ==
+
+= 0.2.3 =
+
+* Исправлена ошибка в настройках цвета фона Сегодня / Fixed error in background option of Today
 
 = 0.2.2 =
 

@@ -60,8 +60,8 @@ function bg_ortcal_options_page() {
 		$todayColor = ( isset( $_POST[$todayColor_name] ) && $_POST[$todayColor_name] ) ? $_POST[$todayColor_name] : '' ;
 		update_option( $todayColor_name, $todayColor );
 
-		$todayBgColor = ( isset( $_POST[$todayBgColor] ) && $_POST[$todayBgColor] ) ? $_POST[$todayBgColor] : '' ;
-		update_option( $todayBgColor, $todayBgColor );
+		$todayBgColor = ( isset( $_POST[$todayBgColor_name] ) && $_POST[$todayBgColor_name] ) ? $_POST[$todayBgColor_name] : '' ;
+		update_option( $todayBgColor_name, $todayBgColor );
 
         // Вывести сообщение об обновлении параметров на экран
 		echo '<div class="updated"><p><strong>Параметры сохранены.</strong></p></div>';
