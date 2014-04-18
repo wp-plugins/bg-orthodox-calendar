@@ -63,6 +63,10 @@ Details in Russian only:
 
 == Changelog ==
 
+= 0.3 =
+
+* Добавлены настройки цвета рамки дней браковенчаний / Added settings of the frame color of Wedding Days
+
 = 0.2.3 =
 
 * Исправлена ошибка в настройках цвета фона Сегодня / Fixed error in background option of Today
@@ -80,6 +84,10 @@ Details in Russian only:
 * Плагин в режиме бета-тестирования / Plugin in beta testing mode
 
 == Upgrade Notice ==
+
+= 0.3 =
+
+* Добавлены настройки цвета рамки дней браковенчаний / Added settings of the frame color of Wedding Days
 
 = 0.2.3 =
 

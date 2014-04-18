@@ -14,6 +14,7 @@
 	$overBgColor 	= get_option( "bg_ortcal_overBgColor" );
 	$todayColor 	= get_option( "bg_ortcal_todayColor" );
 	$todayBgColor 	= get_option( "bg_ortcal_todayBgColor" );
+	$weddingColor 	= get_option( "bg_ortcal_weddingColor" );
    }
 ?>
 /* Окно календаря и меню													*/
@@ -39,6 +40,10 @@
 #bscal .today {			
 	background-color: <?php echo $todayBgColor; ?>;	/* Цвет фона			*/
 	color: <?php echo $todayColor; ?>;				/* Цвет текста			*/
+}
+/* День бракосочетаний	(вкл.)												*/
+#bscal .wedding_on {		
+	outline-color: <?php echo $weddingColor; ?>;	/* Цвет рамки			*/
 }
 /* Окно описания дня 														*/
 #snames {					

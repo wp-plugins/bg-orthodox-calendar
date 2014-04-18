@@ -155,21 +155,15 @@
     font-weight: bold;
 	text-align: center;
 }
-#bscal .nowedding_on {	/* Нет бракосочетания			*/
-	background-image: url('nowedding.png');
-	background-repeat: no-repeat;
-}
 #bscal .wedding_on {		/* Есть бракосочетание			*/
-	background-image: url('wedding.png');
-	background-repeat: no-repeat;
+	outline-width: 1px;
+    outline-style: solid; 
 }
 #bscal .nowedding_off {	/* Нет бракосочетания выкл.		*/
-	background-image: url('empty.png');
-	background-repeat: no-repeat;
+	outline-width: 0px;
 }
 #bscal .wedding_off {	/* Есть бракосочетание	выкл.	*/
-	background-image: url('empty.png');
-	background-repeat: no-repeat;
+	outline-width: 0px;
 }
 #bscal .empty {			/* ЕНет отметок					*/
 	background-image: url('empty.png');
