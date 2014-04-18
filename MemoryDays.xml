@@ -5954,6 +5954,14 @@
   </event>
   <event>
     <s_month>0</s_month>
+    <s_date>5</s_date>
+    <f_month>0</f_month>
+    <f_date>5</f_date>
+    <name>Последование в честь Пресвятой Богородицы ради Ее «Живоносного Источника». Иконы Божией Матери "Живоносный Источник"</name>
+    <type>8</type>
+  </event>
+  <event>
+    <s_month>0</s_month>
     <s_date>7</s_date>
     <f_month>0</f_month>
     <f_date>7</f_date>
@@ -6094,14 +6102,6 @@
     <f_month>4</f_month>
     <f_date>23</f_date>
     <name> Иверской иконы Божией Матери (второе обретение списка иконы 2012)</name>
-    <type>8</type>
-  </event>
-  <event>
-    <s_month>4</s_month>
-    <s_date>27</s_date>
-    <f_month>4</f_month>
-    <f_date>27</f_date>
-    <name>Последование в честь Пресвятой Богородицы ради Ее «Живоносного Источника». Иконы Божией Матери "Живоносный Источник"</name>
     <type>8</type>
   </event>
   <event>
