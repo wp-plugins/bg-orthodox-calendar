@@ -17,7 +17,7 @@ License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Orhodox calendar on your site.
+Orthodox calendar on your site.
 
 
 == Description ==
