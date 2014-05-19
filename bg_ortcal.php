@@ -73,21 +73,20 @@ if ( defined('ABSPATH') && defined('WPINC') ) {
 	if (function_exists('register_uninstall_hook')) {
 		register_uninstall_hook(__FILE__, 'bg_ortcal_deinstall');
 	}
+	
+// Регистрируем шорт-код ortcal_button
+	add_shortcode( 'ortcal_button', 'bg_ortcal_button' );
+}
 
 // Функция действия перед крючком добавления меню
 function bg_ortcal_add_pages() {
     // Добавим новое подменю в раздел Параметры 
     add_options_page( 'Православный календарь', 'Православный календарь', 'manage_options', __FILE__, 'bg_ortcal_options_page');
 }
-	
 /*****************************************************************************************
 	Функции запуска плагина
 	
 ******************************************************************************************/
- 
-// Регистрируем шорт-код ortcal_button
-	add_shortcode( 'ortcal_button', 'bg_ortcal_button' );
-}
 
 // Функция обработки шорт-кода ortcal_button
 function bg_ortcal_button($atts) {

@@ -8,7 +8,7 @@ Tags: calendar, orthodoxy, christianity, календарь, православ�
 
 Requires at least: 3.0.1
 
-Tested up to: 3.8.1
+Tested up to: 3.9.1
 
 Stable tag: trunk
 
@@ -63,6 +63,10 @@ Details in Russian only:
 
 == Changelog ==
 
+= 0.3.1 =
+
+* Исправлена ошибка в настройках CSS / Fixed error in CSS settings
+
 = 0.3 =
 
 * Добавлены настройки цвета рамки дней браковенчаний / Added settings of the frame color of Wedding Days
@@ -84,6 +88,10 @@ Details in Russian only:
 * Плагин в режиме бета-тестирования / Plugin in beta testing mode
 
 == Upgrade Notice ==
+
+= 0.3.1 =
+
+* Исправлена ошибка в настройках CSS / Fixed error in CSS settings
 
 = 0.3 =
 
