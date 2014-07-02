@@ -59,7 +59,7 @@ function bg_ortcal_js_options () {
 	$customXML_val=get_option( "bg_ortcal_customXML" );?>
 	<script>
 		var baseUrl =  "<?php echo plugins_url( '/' , __FILE__ ); ?>";
-		var bg_ortcal_customXML =  "<?php if (is_file(ABSPATH."/".$customXML_val)) echo $customXML_val; ?>";
+		var bg_ortcal_customXML =  "<?php if (is_file(ABSPATH."/".$customXML_val)) echo site_url()."/".$customXML_val; ?>";
 	</script>
 <?php
 }
