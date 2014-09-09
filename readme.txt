@@ -1,6 +1,6 @@
 ﻿=== Bg Orthodox Calendar ===
 
-Contributors: Vadim Bogaiskov
+Contributors: VBog
 
 Donate link: http://bogaiskov.ru/about-me/donate/
 
