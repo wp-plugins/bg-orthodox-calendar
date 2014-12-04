@@ -5,7 +5,6 @@
 *******************************************************************************************/
 function bg_ortcal_options_page() {
 
-	delete_option('bg_ortcal_dayLink');
     // имена опций и полей
 	$mainColor_name 	= "bg_ortcal_mainColor";
 	$mainBgColor_name 	= "bg_ortcal_mainBgColor";
