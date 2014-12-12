@@ -468,7 +468,12 @@ function showDayInfo ( $day,				// День (по умолчанию - сего�
 		if ($day < 1) $day = 1;			// если день задан меньше единицы то первое число 
 		if ($day > $days) $day = $days;	// а если дата больше количества дней в месяце, последний день месяца
 	}
-	$wd = date('w', mktime(0, 0, 0, $month, $day, $year));
+	// Нормализуем дату
+	$mtime = mktime(0, 0, 0, $month, $day, $year);
+	$day = date('d', $mtime);
+	$month = date('m', $mtime);
+	$year = date('Y', $mtime);
+	$wd = date('w', $mtime);
 	
 	if ($sedmica != 'off') $sedmica = 'on';
 	if ($memory != 'off') $memory = 'on';
