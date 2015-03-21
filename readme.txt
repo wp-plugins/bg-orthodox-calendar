@@ -8,7 +8,7 @@ Tags: calendar, orthodoxy, christianity, календарь, православ�
 
 Requires at least: 3.0.1
 
-Tested up to: 4.0.1
+Tested up to: 4.1.1
 
 Stable tag: trunk
 
@@ -170,6 +170,10 @@ Details in Russian only:
 
 == Changelog ==
 
+= 0.7.7 =
+
+* Исправлены ошибки.
+
 = 0.7.6 =
 
 * Исправлены ошибки.
@@ -248,6 +252,10 @@ Details in Russian only:
 
 
 == Upgrade Notice ==
+
+= 0.7.7 =
+
+* Исправлены ошибки.
 
 = 0.7.6 =
 

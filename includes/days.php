@@ -263,8 +263,8 @@ function dayEvents($month, $day, $year){
 					else if ($type==207) $start = shift207 ($s_date, $date, $year);									// Евангелие на Литургии
 					else if ($type>=301 && $type<=309) $start = shift300 ($s_date, $date, $year);					// Псалтирь 
 					else {																							// Все остальные события
-						if ($date >= $easter-70*3600*24) $start = $easter+$s_date*3600*24;								// После Недели о мытаре и фарисее (Триодь) - отсчет от текущей Пасхи
-						else $start = $easter_prev+$s_date*3600*24;														// До Недели о мытаре и фарисее - отсчет от предыдущей Пасхи
+						if ($date >= $ny) $start = $easter+$s_date*3600*24;												// После Нового года - отсчет от текущей Пасхи
+						else $start = $easter_prev+$s_date*3600*24;														// До Нового года - отсчет от предыдущей Пасхи
 					}
 				}
 				
@@ -275,8 +275,8 @@ function dayEvents($month, $day, $year){
 					else if ($type==207) $finish = shift207 ($s_date, $date, $year);								// Евангелие на Литургии
 					else if ($type>=301 && $type<=309) $finish = shift300 ($s_date, $date, $year);					// Псалтирь 
 					else {																							// Все остальные события
-						if ($date >= $easter-70*3600*24) $finish = $easter+$f_date*3600*24;								// После Недели о мытаре и фарисее (Триодь) - отсчет от текущей Пасхи
-						else $finish = $easter_prev+$f_date*3600*24;													// До Недели о мытаре и фарисее - отсчет от предыдущей Пасхи
+						if ($date >= $ny) $finish = $easter+$s_date*3600*24;											// После Нового года - отсчет от текущей Пасхи
+						else $finish = $easter_prev+$f_date*3600*24;													// До Нового года - отсчет от предыдущей Пасхи
 					}
 				}
 			}
@@ -341,7 +341,7 @@ function shift204 ($d, $date, $year) {				// Смещение даты для А
 	$dd = dd($year);											// Отклонение григорианского календаря от юлианского в днях
 	$easter_prev = easter('U', $year-1, true);					// Пасха в предыдущем году
 
-	$end = $easter_prev/(3600*24) + 280;						// День конца годичного цикла
+	$end = $easter_prev/(3600*24) + 273;						// День конца годичного цикла
 	$ec_e = $easter/(3600*24) - $end;							// Количество дней от конца годичного цикла до Пасхи
 	if ($ec_e <= 70) {											// Если внутрь-Пасха
 		if ($d > 210+$ec_e) return false; 							// Отбрасываем лишние дни в конце цикла 
