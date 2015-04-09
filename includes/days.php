@@ -671,7 +671,7 @@ function printReadins ($qq, $type) {
 	if ($qq[$type*10+3] != "") $q .= '<em> На 3-м часе: - </em>'.$qq[$type*10+3];
 	if ($qq[$type*10+6] != "") $q .= '<em> На 6-м часе: - </em>'.$qq[$type*10+6];
 	if ($qq[$type*10+9] != "") $q .= '<em> На 9-м часе: - </em>'.$qq[$type*10+9];
-	if ($qq[$type*10+5] != "") $q .= ' '.$q[$type*10+5];
+	if ($qq[$type*10+5] != "") $q .= ' '.$qq[$type*10+5];
 
 	return $q;
 }
